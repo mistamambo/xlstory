@@ -2,31 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" type="text/css" href="style2.css">
 </head>
 <body>
   <div class="container" >
-    <section class="vid">
     <video autoplay loop muted class="background-clip">
-      <source src="desktopbackground.mp4" type="video/mp4">
+      <source src="pictures/desktopbackground.mp4" type="video/mp4"/>
     </video>
-  </section>
     <div class="content">
-      <h1 class="mainhero">
+    <h1 class="mainhero">
         Mysteriet rundt Sivilforsvarets aktiviteter: En historie om støy, røyk og taushet i nabolaget
     </h1>
-        
+  </div>
 <!---------------------------------------------------------------------------------------INTRO-----------------------------------------START------------------------------------->
         <section class="introSec">
             <article class="introatc">
-                <img class="introImg" src="/pictures/desktopbackground.mp4" alt="smoke">
+                <img class="introImg" src="/pictures/intisar_smoke_intro.jpg" alt="smoke"/>
                 <div class="signaturepic">
                     <span class="signatur_pic">
                         Bilde av røyk som kommer fra øvelsesområdet - Sett utenfor Intisar Casale sin bolig.Foto: Intisar Casale.
                     </span>
-                </div>   
+                  </div>
                 <p>
                     I den ellers rolige og fredelige atmosfæren som preger boligområdet på Starum i Østre Toten kommune, har det lenge 
                     vært en etablert praksis med Sivilforsvarets øvingsaktiviteter. Midt blant de velstelte husene og den stille skogen 
@@ -42,11 +42,12 @@
             </article>
         </section>
         <section class="sivilforsvaret" >
-            <h2 class="heroSfs">
-                Sivilforsvaret
-            </h2>
+            
 <!---------------------------------------------------------------------------------------ABOUT-----------------------------------------START------------------------------------->
-            <article class="about">    
+            <article class="about"> 
+              <h2 class="heroSfs">
+                Sivilforsvaret
+            </h2>  
                 <p class="introSfs" >
                     Sivilforsvaret i Norge innehar en betydningsfull rolle når det kommer til sikkerhet og beredskap i samfunnet. 
                     Deres primære ansvar er å være beredt til å rykke ut ved ulykker, krisesituasjoner og naturkatastrofer for å 
@@ -73,9 +74,9 @@
                     </span>
                 </p>
             </article>
-        <section class="naboer_sec">
+          </section>
 <!---------------------------------------------------------------------------------------STORY-----NABO-------------------------------START------------------------------------->
-            <article class="story" >
+        <section class="naboer_sec"> 
                 <p class="anonym_nabo" >
                     En nabo som foretrekker å være anonym, har uttrykt en særlig bekymring for røykens innvirkning på hestene sine. Han gir uttrykk for at den 
                     intense lukten og røyken har hatt en negativ effekt på dyrenes helse, noe som har vært en betydelig bekymring for alle dyreeierne i området.
@@ -90,6 +91,8 @@
                     spesielt når røyklukten trenger inn i boligen hans.  
                 </p>
                 <div id="map" style="height: 800px; max-width: 900px"></div>
+              
+
     <script>
         var map = L.map('map').setView([60.69450, 10.89501], 16) //600px 800px
         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -925,7 +928,7 @@
                     når hun kommer hjem, men har opplevd flere ganger at øvelser pågår og støyen varer til rundt klokken 12 på formiddagen. Dette skjer etter hennes nattskift, 
                     og det har vært utfordrende for henne å få tilstrekkelig hvile på grunn av støyen fra Sivilforsvarets aktiviteter.
                 </p>
-            </article>
+      </section>
 <!---------------------------------------------------------------------------------------STORY----SOULUTION----------------------------START------------------------------------->
             <article class="solution">
                 <dl>
@@ -966,7 +969,8 @@
                     </dt>
                 </dl>
             </article>
-        </section class="end">
+          
+        <section class="end">
 <!---------------------------------------------------------------------------------------THE----END----------------------------START------------------------------------->
             <article class="avsluttning">
             <p class="journ1">
@@ -974,11 +978,11 @@
                 forhåndsvarsling fra Sivilforsvaret for å lette påvirkningen av deres øvelser på nærmiljøet. Disse bekymringene og behovet for bedre 
                 forberedelser setter søkelyset på viktigheten av å finne en balanse mellom beredskapsøvelser og hensynet til naboers livskvalitet og trivsel.
             </p>
-            <p class="Sfs_part6" ></p>
-            <p>Sivilforsvaret fortsetter sine øvelser på Starum i Østre Toten kommune, men naboene rundt øvingsområdet gir ulike inntrykk av 
+            <p class="Sfs_part6" >
+            Sivilforsvaret fortsetter sine øvelser på Starum i Østre Toten kommune, men naboene rundt øvingsområdet gir ulike inntrykk av 
                 hvordan øvelsene påvirker dem. Mens noen naboer, som Intisar Casale, opplever ubehag på grunn av støy og røyk, virker det 
                 som om andre i lokalsamfunnet ikke deler samme oppfatning.
-            </p >
+            </p>
            
             <p class="journ2">
                 Vi tok en runde gjennom nabolaget for å forstå mer av situasjonen. Det er kjent at Toten er et område der de fleste kjenner 
@@ -1013,8 +1017,6 @@
 
             
         </section>
-      </section>
-    </div>
-    </main>
+      </div>
 </body>
 </html>
